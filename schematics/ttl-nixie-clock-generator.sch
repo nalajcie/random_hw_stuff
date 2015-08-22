@@ -7935,10 +7935,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="VCC" library="wirepad" deviceset="2,15/1,0" device=""/>
-<part name="GND" library="wirepad" deviceset="2,15/1,0" device=""/>
+<part name="VCC" library="wirepad" deviceset="2,15/1,0" device="" value="VCC"/>
+<part name="GND" library="wirepad" deviceset="2,15/1,0" device="" value="GND"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="CLK_OUT" library="wirepad" deviceset="2,15/1,0" device=""/>
+<part name="CLK_OUT" library="wirepad" deviceset="2,15/1,0" device="" value="CLK_OUT"/>
 </parts>
 <sheets>
 <sheet>
@@ -7967,10 +7967,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND1" gate="1" x="-15.24" y="27.94"/>
 <instance part="GND2" gate="1" x="17.78" y="27.94"/>
 <instance part="SUPPLY2" gate="G$1" x="68.58" y="81.28"/>
-<instance part="VCC" gate="1" x="63.5" y="78.74"/>
-<instance part="GND" gate="1" x="63.5" y="68.58"/>
+<instance part="VCC" gate="1" x="63.5" y="78.74" smashed="yes">
+<attribute name="NAME" x="60.96" y="78.74" size="1.778" layer="95" align="center-right"/>
+</instance>
+<instance part="GND" gate="1" x="63.5" y="68.58" smashed="yes">
+<attribute name="NAME" x="60.96" y="68.58" size="1.778" layer="95" align="center-right"/>
+</instance>
 <instance part="GND3" gate="1" x="68.58" y="63.5"/>
-<instance part="CLK_OUT" gate="1" x="63.5" y="73.66"/>
+<instance part="CLK_OUT" gate="1" x="63.5" y="73.66" smashed="yes">
+<attribute name="NAME" x="60.96" y="73.66" size="1.778" layer="95" align="center-right"/>
+</instance>
 </instances>
 <busses>
 </busses>
