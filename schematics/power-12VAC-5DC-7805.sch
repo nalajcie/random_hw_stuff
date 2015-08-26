@@ -1819,7 +1819,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="-12~" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
 <part name="+5V" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
 <part name="GND" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
-<part name="GND1" library="wirepad" deviceset="WIREPAD" device="2,15/1,0" value="WIREPAD2,15/1,0"/>
 </parts>
 <sheets>
 <sheet>
@@ -1850,9 +1849,6 @@ can be 100nF</text>
 </instance>
 <instance part="GND" gate="G$1" x="0" y="25.4" smashed="yes">
 <attribute name="NAME" x="-1.143" y="27.2542" size="1.778" layer="95"/>
-</instance>
-<instance part="GND1" gate="G$1" x="0" y="20.32" smashed="yes">
-<attribute name="NAME" x="-1.143" y="22.1742" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -1905,11 +1901,6 @@ can be 100nF</text>
 <pinref part="GND" gate="G$1" pin="P"/>
 <wire x1="2.54" y1="25.4" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
 <label x="5.08" y="25.4" size="1.6764" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="GND1" gate="G$1" pin="P"/>
-<wire x1="2.54" y1="20.32" x2="5.08" y2="20.32" width="0.1524" layer="91"/>
-<label x="5.08" y="20.32" size="1.6764" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VCC" class="0">

@@ -112,15 +112,15 @@
 blue wires - protoboard connections</text>
 <text x="0" y="40.64" size="1.016" layer="1">place for radiator
 </text>
-<wire x1="1.27" y1="10.16" x2="1.27" y2="-3.81" width="0.4064" layer="25"/>
-<wire x1="1.27" y1="-3.81" x2="6.35" y2="-3.81" width="0.4064" layer="25"/>
+<wire x1="1.27" y1="10.16" x2="1.27" y2="-4.445" width="0.4064" layer="25"/>
+<wire x1="1.27" y1="-4.445" x2="6.35" y2="-4.445" width="0.4064" layer="25"/>
 <wire x1="6.35" y1="10.16" x2="1.27" y2="10.16" width="0.4064" layer="25"/>
-<wire x1="6.35" y1="10.16" x2="13.97" y2="10.16" width="0.4064" layer="25"/>
-<wire x1="13.97" y1="10.16" x2="13.97" y2="-3.81" width="0.4064" layer="25"/>
-<wire x1="13.97" y1="-3.81" x2="6.35" y2="-3.81" width="0.4064" layer="25"/>
-<wire x1="6.35" y1="-3.81" x2="6.35" y2="10.16" width="0.4064" layer="25"/>
-<text x="10.16" y="5.715" size="1.27" layer="25" align="bottom-center">OUT</text>
-<text x="3.81" y="5.715" size="1.27" layer="25" align="bottom-center">IN</text>
+<wire x1="6.35" y1="10.16" x2="11.43" y2="10.16" width="0.4064" layer="25"/>
+<wire x1="11.43" y1="10.16" x2="11.43" y2="-4.445" width="0.4064" layer="25"/>
+<wire x1="11.43" y1="-4.445" x2="6.35" y2="-4.445" width="0.4064" layer="25"/>
+<wire x1="6.35" y1="-4.445" x2="6.35" y2="10.16" width="0.4064" layer="25"/>
+<text x="8.89" y="-3.81" size="1.27" layer="25" align="bottom-center">OUT</text>
+<text x="3.81" y="-3.81" size="1.27" layer="25" align="bottom-center">IN</text>
 <wire x1="15.24" y1="7.62" x2="15.24" y2="12.7" width="0.4064" layer="49"/>
 <wire x1="15.24" y1="15.24" x2="15.24" y2="20.32" width="0.4064" layer="49"/>
 <wire x1="15.24" y1="22.86" x2="15.24" y2="27.94" width="0.4064" layer="49"/>
@@ -438,12 +438,12 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="5.715" y="24.638" size="0.8128" layer="27" rot="R180"/>
 <attribute name="NAME" x="3.937" y="21.844" size="0.4064" layer="25" rot="R180"/>
 </element>
-<element name="C2" library="SparkFun-Capacitors" package="CAP-PTH-SMALL" value="33nF" x="2.54" y="27.94"/>
-<element name="C3" library="SparkFun-Capacitors" package="CPOL-RADIAL-100UF-25V" value="10uF" x="8.89" y="27.94" smashed="yes" rot="R180">
-<attribute name="VALUE" x="10.16" y="29.718" size="0.8128" layer="27" rot="R180"/>
-<attribute name="NAME" x="9.017" y="26.924" size="0.4064" layer="25" rot="R180"/>
+<element name="C2" library="SparkFun-Capacitors" package="CAP-PTH-SMALL" value="33nF" x="2.54" y="17.78"/>
+<element name="C3" library="SparkFun-Capacitors" package="CPOL-RADIAL-100UF-25V" value="10uF" x="6.35" y="30.48" smashed="yes">
+<attribute name="VALUE" x="5.08" y="28.702" size="0.8128" layer="27"/>
+<attribute name="NAME" x="6.223" y="31.496" size="0.4064" layer="25"/>
 </element>
-<element name="C4" library="SparkFun-Capacitors" package="CAP-PTH-SMALL" value="100nF" x="7.62" y="22.86"/>
+<element name="C4" library="SparkFun-Capacitors" package="CAP-PTH-SMALL" value="100nF" x="10.16" y="7.62" rot="R180"/>
 <element name="GND" library="wirepad" package="2,15/1,0" value="WIREPAD2,15/1,0" x="7.62" y="2.54" smashed="yes">
 <attribute name="NAME" x="7.62" y="0.635" size="1.016" layer="25" ratio="10" rot="R90" align="center-right"/>
 <attribute name="VALUE" x="7.62" y="3.54" size="0.0254" layer="27"/>
@@ -455,10 +455,6 @@ design rules under a new name.</description>
 <attribute name="NAME" x="10.16" y="0.635" size="1.016" layer="25" ratio="10" rot="R90" align="center-right"/>
 <attribute name="VALUE" x="10.16" y="3.54" size="0.0254" layer="27"/>
 </element>
-<element name="GND1" library="wirepad" package="2,15/1,0" value="WIREPAD2,15/1,0" x="12.7" y="2.54" smashed="yes">
-<attribute name="NAME" x="12.7" y="0.635" size="1.016" layer="25" ratio="10" rot="R90" align="center-right"/>
-<attribute name="VALUE" x="12.7" y="3.54" size="0.0254" layer="27"/>
-</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -469,15 +465,17 @@ design rules under a new name.</description>
 <via x="2.54" y="20.32" extent="1-16" drill="0.6"/>
 <wire x1="2.54" y1="20.32" x2="2.54" y2="22.86" width="0.4064" layer="1"/>
 <via x="2.54" y="22.86" extent="1-16" drill="0.6"/>
-<wire x1="2.54" y1="22.86" x2="2.54" y2="27.94" width="0.4064" layer="16"/>
-<via x="2.54" y="27.94" extent="1-16" drill="0.6"/>
+<wire x1="2.54" y1="22.86" x2="2.54" y2="17.78" width="0.4064" layer="16"/>
+<via x="2.54" y="17.78" extent="1-16" drill="0.6"/>
 <wire x1="2.522328125" y1="15.222203125" x2="2.522328125" y2="20.302328125" width="0.4064" layer="16"/>
 <wire x1="2.522328125" y1="20.302328125" x2="2.54" y2="20.32" width="0.4064" layer="16"/>
-<wire x1="2.54" y1="27.94" x2="2.54" y2="30.48" width="0.4064" layer="1"/>
 <via x="2.54" y="30.48" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="2.54" y1="30.48" x2="2.54" y2="35.56" width="0.4064" layer="16"/>
 <via x="2.54" y="35.56" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="2.54" y1="35.56" x2="2.54" y2="38.1" width="0.4064" layer="1"/>
+<wire x1="2.54" y1="17.78" x2="2.54" y2="27.94" width="0.4064" layer="16"/>
+<via x="2.54" y="27.94" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="2.54" y1="27.94" x2="2.54" y2="30.48" width="0.4064" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="IC1" pad="2"/>
@@ -487,69 +485,51 @@ design rules under a new name.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="C4" pad="2"/>
 <contactref element="GND" pad="1"/>
-<wire x1="5.08" y1="22.86" x2="5.08" y2="27.94" width="0.4064" layer="16"/>
-<via x="5.08" y="27.94" extent="1-16" drill="0.6"/>
+<via x="5.08" y="30.48" extent="1-16" drill="0.6"/>
 <wire x1="7.62" y1="2.54" x2="7.62" y2="5.08" width="0.4064" layer="16"/>
 <via x="7.62" y="5.08" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="7.62" width="0.4064" layer="1"/>
 <via x="7.62" y="7.62" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="10.160125" width="0.4064" layer="16"/>
 <wire x1="7.62" y1="10.160125" x2="7.63766875" y2="10.17779375" width="0.4064" layer="16"/>
-<wire x1="7.63766875" y1="10.17779375" x2="7.63766875" y2="12.68233125" width="0.4064" layer="16"/>
-<wire x1="7.63766875" y1="12.68233125" x2="7.62" y2="12.7" width="0.4064" layer="16"/>
-<via x="7.62" y="12.7" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="7.62" y1="12.7" x2="12.7" y2="12.7" width="0.4064" layer="1"/>
-<via x="12.7" y="12.7" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="12.7" y1="12.7" x2="12.7" y2="15.24" width="0.4064" layer="1"/>
-<via x="12.7" y="15.24" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="12.7" y1="15.24" x2="12.7" y2="20.32" width="0.4064" layer="16"/>
-<via x="12.7" y="20.32" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="12.7" y1="20.32" x2="10.16" y2="22.86" width="0.4064" layer="1"/>
-<via x="10.16" y="22.86" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="10.16" y1="22.86" x2="10.16" y2="27.94" width="0.4064" layer="16"/>
+<via x="5.08" y="20.32" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="5.08" y1="20.32" x2="5.08" y2="22.86" width="0.4064" layer="1"/>
+<wire x1="5.08" y1="22.86" x2="5.08" y2="27.94" width="0.4064" layer="16"/>
+<via x="5.08" y="27.94" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="5.08" y1="27.94" x2="5.08" y2="30.48" width="0.4064" layer="1"/>
-<via x="5.08" y="30.48" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="5.08" y1="30.48" x2="5.08" y2="35.56" width="0.4064" layer="16"/>
 <via x="5.08" y="35.56" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="5.08" y1="33.02" x2="5.08" y2="35.56" width="0.4064" layer="16"/>
 <wire x1="5.08" y1="35.56" x2="5.08" y2="38.1" width="0.4064" layer="1"/>
-<wire x1="10.16" y1="27.94" x2="10.16" y2="30.48" width="0.4064" layer="1"/>
-<via x="10.16" y="30.48" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="10.16" y1="30.48" x2="10.16" y2="33.02" width="0.4064" layer="16"/>
-<wire x1="10.16" y1="35.56" x2="10.16" y2="33.02" width="0.4064" layer="16"/>
-<via x="10.16" y="33.02" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="10.16" y1="33.02" x2="5.08" y2="33.02" width="0.4064" layer="1"/>
-<via x="5.08" y="33.02" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="5.08" y1="33.02" x2="5.08" y2="30.48" width="0.4064" layer="16"/>
-<contactref element="GND1" pad="1"/>
-<wire x1="12.7" y1="12.7" x2="12.7" y2="7.62" width="0.4064" layer="16"/>
-<via x="12.7" y="7.62" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="12.7" y1="7.62" x2="12.7" y2="5.08" width="0.4064" layer="1"/>
-<via x="12.7" y="5.08" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="12.7" y1="5.08" x2="12.7" y2="2.54" width="0.4064" layer="16"/>
+<wire x1="7.63766875" y1="10.17779375" x2="7.62" y2="10.17779375" width="0.4064" layer="16"/>
+<wire x1="7.62" y1="10.17779375" x2="7.62" y2="12.7" width="0.4064" layer="16"/>
+<via x="7.62" y="12.7" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="7.62" y1="12.7" x2="5.08" y2="15.24" width="0.4064" layer="1"/>
+<via x="5.08" y="15.24" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="17.78" width="0.4064" layer="16"/>
+<wire x1="5.08" y1="17.78" x2="5.08" y2="20.32" width="0.4064" layer="16"/>
 </signal>
 <signal name="VCC">
 <contactref element="IC1" pad="3"/>
 <contactref element="C3" pad="1"/>
 <contactref element="C4" pad="1"/>
 <contactref element="+5V" pad="1"/>
-<via x="10.16" y="12.7" extent="1-16" drill="0.6"/>
-<wire x1="10.16" y1="12.7" x2="10.16" y2="15.24" width="0.4064" layer="1"/>
-<via x="10.16" y="15.24" extent="1-16" drill="0.6"/>
-<wire x1="10.16" y1="15.24" x2="10.16" y2="20.32" width="0.4064" layer="16"/>
-<via x="10.16" y="20.32" extent="1-16" drill="0.6"/>
-<wire x1="10.16" y1="20.32" x2="7.62" y2="22.86" width="0.4064" layer="1"/>
-<via x="7.62" y="22.86" extent="1-16" drill="0.6"/>
-<wire x1="10.16" y1="12.7" x2="10.16" y2="7.62" width="0.4064" layer="16"/>
-<via x="10.16" y="7.62" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="10.16" y1="7.62" x2="10.16" y2="5.08" width="0.4064" layer="1"/>
-<via x="10.16" y="5.08" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="2.54" width="0.4064" layer="16"/>
-<wire x1="7.62" y1="22.86" x2="7.62" y2="27.94" width="0.4064" layer="16"/>
-<wire x1="7.62" y1="27.94" x2="7.62" y2="30.48" width="0.4064" layer="1"/>
-<via x="7.62" y="30.48" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="7.62" y1="30.48" x2="7.62" y2="35.56" width="0.4064" layer="16"/>
+<wire x1="7.62" y1="38.1" x2="7.62" y2="35.56" width="0.4064" layer="1"/>
 <via x="7.62" y="35.56" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="7.62" y1="35.56" x2="7.62" y2="38.1" width="0.4064" layer="1"/>
+<wire x1="7.62" y1="35.56" x2="7.62" y2="30.48" width="0.4064" layer="16"/>
+<wire x1="7.62" y1="30.48" x2="7.62" y2="27.94" width="0.4064" layer="1"/>
+<via x="7.62" y="27.94" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="7.62" y1="27.94" x2="7.62" y2="22.86" width="0.4064" layer="16"/>
+<via x="7.62" y="22.86" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="10.16" y1="2.54" x2="10.16" y2="5.08" width="0.4064" layer="16"/>
+<via x="10.16" y="5.08" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="7.62" width="0.4064" layer="1"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="12.7" width="0.4064" layer="16"/>
+<via x="10.16" y="12.7" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="15.24" width="0.4064" layer="1"/>
+<via x="10.16" y="15.24" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="20.32" width="0.4064" layer="16"/>
+<via x="10.16" y="20.32" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="10.16" y1="20.32" x2="7.62" y2="22.86" width="0.4064" layer="1"/>
 </signal>
 <signal name="+12V">
 <contactref element="B1" pad="AC1"/>
