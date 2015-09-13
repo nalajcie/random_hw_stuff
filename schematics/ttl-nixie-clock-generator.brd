@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -193,6 +193,7 @@
 <text x="7.62" y="-13.97" size="1.778" layer="1">we're constructing only the 1MHz generator
 (the board contents)
 the divider circuit added just for the referece</text>
+<text x="67.31" y="11.43" size="1.778" layer="26" font="vector">DIY.NALAJCIE.ORG</text>
 </plain>
 <libraries>
 <library name="capacitor-wima">
